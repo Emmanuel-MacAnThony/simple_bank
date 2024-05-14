@@ -11,7 +11,7 @@ import (
 	// _ "github.com/lib/pq"
 )
 
-var testStore *SQLStore
+var testStore Store
 var testDB *pgxpool.Pool
 
 func TestMain(m *testing.M) {
