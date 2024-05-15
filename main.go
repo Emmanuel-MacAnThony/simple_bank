@@ -21,7 +21,7 @@ func main() {
 	}
 	log.Println("Connected to DB 🚀🚀🚀")
 	store := db.NewStore(connPool)
-	server, err := api.NewServer(store)
+	server, err := api.NewServer(config, store)
 	if err != nil {
 		log.Fatal("Cannot create server")
 	}
