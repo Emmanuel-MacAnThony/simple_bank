@@ -13,7 +13,7 @@ migratedown:
 migratedown1:
 	migrate -path db/migrations -database "postgresql://root:feb061999@localhost:5432/simple_bank?sslmode=disable" -verbose down 1
 sqlc:
-	sqlc generate
+	sqlc generate 
 test:
 	go test -v -cover ./...
 server:
